@@ -282,9 +282,10 @@ const gaList = document.getElementById("gaList");
 const gaButtons = document.getElementById("gaButtons");
 const preStep2Buttons = document.getElementById("preStep2Buttons");
 
-
 function populateBroadGAs(category = "") {
-  broadGASelect.innerHTML = '<option value="">-- Select a GA --</option>';
+  const firstSelect = document.getElementById("firstSelect");
+  firstSelect.innerHTML = "<option value=''>-- Select a Graduate Attribute type --</option>";
+  
   let allowedKeys = [];
 
   if (category === "1") {
@@ -292,10 +293,10 @@ function populateBroadGAs(category = "") {
   } else if (category === "2") {
     allowedKeys = ["Application", "Generic"];
   } else if (category === "3") {
-    allowedKeys = ["Employability", "Ethics & Values"];
+    allowedKeys = ["Employability", "Ethics"];
   } else if (category === "4") {
-    allowedKeys = ["Student Contribution", "Subject Evolution"];
-   else if (category === "5") {
+    allowedKeys = ["StudentContribution", "SubjectEvolution"];
+  } else if (category === "5") {
     allowedKeys = ["ABC"];
   } else if (category === "6") {
     allowedKeys = ["DEF"];
@@ -305,20 +306,17 @@ function populateBroadGAs(category = "") {
     allowedKeys = ["JKL"];
   }
 
-  }
+  const gaKeys = Object.keys(gaOptions).filter(key => allowedKeys.includes(key));
 
-  Object.keys(gaOptions).forEach(ga => {
-    if (!category || allowedKeys.includes(ga)) {
-      const opt = document.createElement("option");
-      opt.value = ga;
-      opt.textContent = ga;
-      broadGASelect.appendChild(opt);
-    }
+  gaKeys.forEach(key => {
+    gaOptions[key].forEach(subGa => {
+      const option = document.createElement("option");
+      option.value = subGa;
+      option.textContent = subGa;
+      firstSelect.appendChild(option);
+    });
   });
-
-  updateSubGAs(); // Reset sub-GAs
 }
-
 
 function updateSubGAs() {
   const selectedGA = broadGASelect.value;
