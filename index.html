@@ -149,7 +149,8 @@ const gaOptions = {
   "Employability": ["Employability – Readiness", "Employability – Teamwork", "Employability – Ownership"],
   "Ethics & Values": ["Ethics & Values – Practice"],
   "Student Contribution": ["Student Contribution – Ask", "Student Contribution – Group", "Student Contribution – Risks"],
-  "Subject Evolution": ["Subject Evolution – Temporal", "Subject Evolution – Human"]
+  "Subject Evolution": ["Subject Evolution – Temporal", "Subject Evolution – Human"],
+    "ABC": ["ABC 1", "ABC 2", "ABC 3"]
 };
 
 const confirmedGAs = [];
@@ -287,6 +288,8 @@ function populateBroadGAs(category = "") {
     allowedKeys = ["Employability", "Ethics & Values"];
   } else if (category === "4") {
     allowedKeys = ["Student Contribution", "Subject Evolution"];
+} else if (category === "5") {
+    allowedKeys = ["ABC"];
   }
 
   Object.keys(gaOptions).forEach(ga => {
