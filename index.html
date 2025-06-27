@@ -92,6 +92,11 @@
   <option value="2">Option 2: Application & Generic</option>
   <option value="3">Option 3: Employability & Ethics</option>
   <option value="4">Option 4: Student Contribution & Subject Evolution</option>
+   <option value="5">ABC</option>
+   <option value="6">DEF</option>
+    <option value="7">GHI</option>
+    <option value="8">JKL</option>
+    
 </select>
 
 <label for="broadGA">Select a Graduate Attribute type:</label>
@@ -286,6 +291,14 @@ function populateBroadGAs(category = "") {
     allowedKeys = ["Employability", "Ethics & Values"];
   } else if (category === "4") {
     allowedKeys = ["Student Contribution", "Subject Evolution"];
+  } else if (category === "5") {
+    allowedKeys = ["ABC1", "ABC2"];
+} else if (category === "6") {
+    allowedKeys = ["DEF1", "DEF2"];
+      } else if (category === "7") {
+    allowedKeys = ["GHI1", "GHI2"];
+      } else if (category === "8") {
+    allowedKeys = ["JKL1", "JKL2"];
   }
 
   Object.keys(gaOptions).forEach(ga => {
@@ -556,6 +569,46 @@ const cloTemplates = {
     example: "Students will be able to explain the evolution of calculus from early Greek mathematics to Newton and Leibniz."
   },
   "Subject Evolution – Human": {
+    verbs: ["identify", "describe", "analyze", "explain", "illustrate"],
+    template: ["Students will be able to", "[verb]", "contributions of", "[individuals/cultures]", "in", "[subject/topic]"],
+    example: "Students will be able to illustrate contributions of Indian and Arab mathematicians to early concepts of integration."
+  }
+     "ABC1": {
+    verbs: ["identify", "describe", "analyze", "explain", "illustrate"],
+    template: ["Students will be able to", "[verb]", "contributions of", "[individuals/cultures]", "in", "[subject/topic]"],
+    example: "Students will be able to illustrate contributions of Indian and Arab mathematicians to early concepts of integration."
+  }
+    "ABC2": {
+    verbs: ["identify", "describe", "analyze", "explain", "illustrate"],
+    template: ["Students will be able to", "[verb]", "contributions of", "[individuals/cultures]", "in", "[subject/topic]"],
+    example: "Students will be able to illustrate contributions of Indian and Arab mathematicians to early concepts of integration."
+  }
+    "DEF1": {
+    verbs: ["identify", "describe", "analyze", "explain", "illustrate"],
+    template: ["Students will be able to", "[verb]", "contributions of", "[individuals/cultures]", "in", "[subject/topic]"],
+    example: "Students will be able to illustrate contributions of Indian and Arab mathematicians to early concepts of integration."
+  }
+    "DEF2": {
+    verbs: ["identify", "describe", "analyze", "explain", "illustrate"],
+    template: ["Students will be able to", "[verb]", "contributions of", "[individuals/cultures]", "in", "[subject/topic]"],
+    example: "Students will be able to illustrate contributions of Indian and Arab mathematicians to early concepts of integration."
+  }
+    "GHI1": {
+    verbs: ["identify", "describe", "analyze", "explain", "illustrate"],
+    template: ["Students will be able to", "[verb]", "contributions of", "[individuals/cultures]", "in", "[subject/topic]"],
+    example: "Students will be able to illustrate contributions of Indian and Arab mathematicians to early concepts of integration."
+  }
+    "GHI2": {
+    verbs: ["identify", "describe", "analyze", "explain", "illustrate"],
+    template: ["Students will be able to", "[verb]", "contributions of", "[individuals/cultures]", "in", "[subject/topic]"],
+    example: "Students will be able to illustrate contributions of Indian and Arab mathematicians to early concepts of integration."
+  }
+    "JKL1": {
+    verbs: ["identify", "describe", "analyze", "explain", "illustrate"],
+    template: ["Students will be able to", "[verb]", "contributions of", "[individuals/cultures]", "in", "[subject/topic]"],
+    example: "Students will be able to illustrate contributions of Indian and Arab mathematicians to early concepts of integration."
+  }
+    "JKL2": {
     verbs: ["identify", "describe", "analyze", "explain", "illustrate"],
     template: ["Students will be able to", "[verb]", "contributions of", "[individuals/cultures]", "in", "[subject/topic]"],
     example: "Students will be able to illustrate contributions of Indian and Arab mathematicians to early concepts of integration."
