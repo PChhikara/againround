@@ -147,18 +147,18 @@
 </section>
 <script>
 const gaOptions = {
-  "Knowledge": ["Knowledge – Concepts", "Knowledge – Procedures", "Knowledge – Linking"],
-  "Skills": ["Skills – Task", "Skills – Analyze", "Skills – Select/Evaluate"],
-  "Application": ["Application – Knowledge", "Application – Skill"],
-  "Generic": ["Generic – Communication", "Generic – Critical Judgment", "Generic – Own Learning"],
-  "Employability": ["Employability – Readiness", "Employability – Teamwork", "Employability – Ownership"],
-  "Ethics & Values": ["Ethics & Values – Practice"],
-  "Student Contribution": ["Student Contribution – Ask", "Student Contribution – Group", "Student Contribution – Risks"],
-  "Subject Evolution": ["Subject Evolution – Temporal", "Subject Evolution – Human"],
-    "ABC": ["ABC 1", "ABC 2", "ABC 3"],
-    "DEF": ["DEF 1", "DEF 2", "DEF 3"],
-"GHI": ["GHI 1", "GHI 2", "GHI 3"],
-"JKL": ["JKL 1", "JKL 2", "JKL 3"]
+  "Sub-GA 1": ["Knowledge – Concepts", "Knowledge – Procedures", "Knowledge – Linking"],
+  "Sub-GA 2": ["Skills – Task", "Skills – Analyze", "Skills – Select/Evaluate"],
+  "Sub-GA 3": ["Application – Knowledge", "Application – Skill"],
+  "Sub-GA 4": ["Generic – Communication", "Generic – Critical Judgment", "Generic – Own Learning"],
+  "Sub-GA 5": ["Employability – Readiness", "Employability – Teamwork", "Employability – Ownership"],
+  "Sub-GA 6": ["Ethics & Values – Practice"],
+  "Sub-GA 7": ["Student Contribution – Ask", "Student Contribution – Group", "Student Contribution – Risks"],
+  "Sub-GA 8": ["Subject Evolution – Temporal", "Subject Evolution – Human"],
+    "Sub-GA 9": ["ABC 1", "ABC 2", "ABC 3"],
+    "Sub-GA 10": ["DEF 1", "DEF 2", "DEF 3"],
+"Sub-GA 11": ["GHI 1", "GHI 2", "GHI 3"],
+"Sub-GA 12": ["JKL 1", "JKL 2", "JKL 3"]
 };
 
 const confirmedGAs = [];
@@ -289,22 +289,22 @@ function populateBroadGAs(category = "") {
   let allowedKeys = [];
 
   if (category === "1") {
-    allowedKeys = ["Knowledge", "Skills"];
+    allowedKeys = ["Sub-GA 1", "Sub-GA 2"];
   } else if (category === "2") {
-    allowedKeys = ["Application", "Generic"];
+    allowedKeys = ["Sub-GA 3", "Sub-GA 4"];
   } else if (category === "3") {
-    allowedKeys = ["Employability", "Ethics & Values"];
+    allowedKeys = ["Sub-GA 5", "Sub-GA 6"];
   } else if (category === "4") {
-    allowedKeys = ["Student Contribution", "Subject Evolution"];
+    allowedKeys = ["Sub-GA 7", "Sub-GA 8"];
 } else if (category === "5") {
-    allowedKeys = ["ABC"];
+    allowedKeys = ["Sub-GA 9"];
   }
 else if (category === "6") {
-  allowedKeys = ["DEF"];
+  allowedKeys = ["Sub-GA 10"];
 } else if (category === "7") {
-  allowedKeys = ["GHI"];
+  allowedKeys = ["Sub-GA 11"];
 } else if (category === "8") {
-  allowedKeys = ["JKL"];
+  allowedKeys = ["Sub-GA 12"];
 }
 
   Object.keys(gaOptions).forEach(ga => {
