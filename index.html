@@ -93,6 +93,9 @@
   <option value="3">Option 3: Employability & Ethics</option>
   <option value="4">Option 4: Student Contribution & Subject Evolution</option>
     <option value="5">Option 5: ABC</option> 
+    <option value="6">Option 6: DEF</option>
+  <option value="7">Option 7: GHI</option>
+  <option value="8">Option 8: JKL</option>
 </select>
 
 <label for="broadGA">Select a Sub-Graduate Attribute:</label>
@@ -150,7 +153,10 @@ const gaOptions = {
   "Ethics & Values": ["Ethics & Values – Practice"],
   "Student Contribution": ["Student Contribution – Ask", "Student Contribution – Group", "Student Contribution – Risks"],
   "Subject Evolution": ["Subject Evolution – Temporal", "Subject Evolution – Human"],
-    "ABC": ["ABC 1", "ABC 2", "ABC 3"]
+    "ABC": ["ABC 1", "ABC 2", "ABC 3"],
+    "DEF": ["DEF 1", "DEF 2", "DEF 3"],
+"GHI": ["GHI 1", "GHI 2", "GHI 3"],
+"JKL": ["JKL 1", "JKL 2", "JKL 3"]
 };
 
 const confirmedGAs = [];
@@ -291,6 +297,13 @@ function populateBroadGAs(category = "") {
 } else if (category === "5") {
     allowedKeys = ["ABC"];
   }
+else if (category === "6") {
+  allowedKeys = ["DEF"];
+} else if (category === "7") {
+  allowedKeys = ["GHI"];
+} else if (category === "8") {
+  allowedKeys = ["JKL"];
+}
 
   Object.keys(gaOptions).forEach(ga => {
     if (!category || allowedKeys.includes(ga)) {
