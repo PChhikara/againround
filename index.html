@@ -171,92 +171,69 @@ const gaOptions = {
 
 const confirmedGAs = [];
 const sentenceStructures = {
-  "Knowledge – Concepts": {
+  "STANDARD-Knowledge/Understanding-Concept": {
     template: ["Graduates will be able to", "[verb]", "key", "[concepts/theories/principles]", "in", "[disciplinary or multidisciplinary contexts]"],
     verbs: ["understand", "demonstrate", "develop", "articulate"]
   },
-  "Knowledge – Procedures": {
+  "DEVELOPMENTAL-Knowledge/Understanding-Concept": {
     template: ["Graduates will be able to", "[verb]", "[methods/procedures]", "relevant to", "[discipline/task]"],
     verbs: ["apply", "perform", "demonstrate", "use"]
   },
-  "Knowledge – Linking": {
+  "ASPIRATIONAL-Knowledge/Understanding-Concept": {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "Skills – Task": {
+  "INTEGRATIVE-Knowledge/Understanding-Concept": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   },
-  "Skills – Analyze": {
-    template: ["Graduates will be able to", "[verb]", "information from", "[sources/domains]", "to draw meaningful conclusions"],
-    verbs: ["analyze", "synthesize", "evaluate", "examine"]
+    "STANDARD-Knowledge/Understanding-Procedure": {
+    template: ["Graduates will be able to", "[verb]", "key", "[concepts/theories/principles]", "in", "[disciplinary or multidisciplinary contexts]"],
+    verbs: ["understand", "demonstrate", "develop", "articulate"]
   },
-  "Skills – Select/Evaluate": {
-    template: ["Graduates will be able to", "[verb]", "appropriate", "[tools/methods]", "for addressing problems in", "[discipline/application]"],
-    verbs: ["select", "evaluate", "assess", "determine"]
+  "DEVELOPMENTAL-Knowledge/Understanding-Procedure": {
+    template: ["Graduates will be able to", "[verb]", "[methods/procedures]", "relevant to", "[discipline/task]"],
+    verbs: ["apply", "perform", "demonstrate", "use"]
   },
-  "Application – Knowledge": {
-    template: ["Graduates will be able to", "[verb]", "[knowledge]", "to solve", "[real-world/simulated problems]"],
-    verbs: ["apply", "use", "translate", "implement"]
+  "ASPIRATIONAL-Knowledge/Understanding-Procedure": {
+    template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
+    verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "Application – Skill": {
-    template: ["Graduates will be able to", "[verb]", "skills to", "[create/design solutions]", "for", "[tasks/problems]"],
-    verbs: ["utilize", "apply", "engineer", "construct"]
+  "INTEGRATIVE-Knowledge/Understanding-Procedure": {
+    template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
+    verbs: ["perform", "carry out", "execute", "operate"]
   },
-  "Generic – Communication": {
-    template: ["Graduates will be able to", "[verb]", "clearly in", "[oral/written/visual forms]", "to", "[audiences/context]"],
-    verbs: ["communicate", "express", "convey", "present"]
+    "STANDARD-Knowledge/Understanding-Linking Ideas": {
+    template: ["Graduates will be able to", "[verb]", "key", "[concepts/theories/principles]", "in", "[disciplinary or multidisciplinary contexts]"],
+    verbs: ["understand", "demonstrate", "develop", "articulate"]
   },
-  "Generic – Critical Judgment": {
-    template: ["Graduates will be able to", "[verb]", "issues from", "[multiple perspectives]", "to make", "[reasoned decisions]"],
-    verbs: ["evaluate", "judge", "critique", "assess"]
+  "DEVELOPMENTAL-Knowledge/Understanding-Linking Ideas": {
+    template: ["Graduates will be able to", "[verb]", "[methods/procedures]", "relevant to", "[discipline/task]"],
+    verbs: ["apply", "perform", "demonstrate", "use"]
   },
-  "Generic – Own Learning": {
-    template: ["Graduates will be able to", "[verb]", "their own learning in", "[new/unfamiliar situations]", "to", "[solve problems/advance knowledge]"],
-    verbs: ["reflect on", "take responsibility for", "plan", "monitor"]
+  "ASPIRATIONAL-Knowledge/Understanding-Linking Ideas": {
+    template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
+    verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "Employability – Readiness": {
-    template: ["Graduates will be able to", "[verb]", "themselves for", "[professional careers/further study]"],
-    verbs: ["prepare", "equip", "develop", "position"]
+  "INTEGRATIVE-Knowledge/Understanding-Concept": {
+    template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
+    verbs: ["perform", "carry out", "execute", "operate"]
   },
-  "Employability – Teamwork": {
-    template: ["Graduates will be able to", "[verb]", "effectively in", "[teams/groups]", "to achieve", "[shared goals]"],
-    verbs: ["work", "collaborate", "coordinate", "contribute"]
+"STANDARD-Skill-Task Completion": {
+    template: ["Graduates will be able to", "[verb]", "key", "[concepts/theories/principles]", "in", "[disciplinary or multidisciplinary contexts]"],
+    verbs: ["understand", "demonstrate", "develop", "articulate"]
   },
-  "Employability – Ownership": {
-    template: ["Graduates will be able to", "[verb]", "responsibility for", "[work/outcomes]", "in", "[professional contexts]"],
-    verbs: ["take", "demonstrate", "assume", "exercise"]
+  "DEVELOPMENTAL-Skill-Task Completion": {
+    template: ["Graduates will be able to", "[verb]", "[methods/procedures]", "relevant to", "[discipline/task]"],
+    verbs: ["apply", "perform", "demonstrate", "use"]
   },
-  "Ethics & Values – Practice": {
-    template: ["Graduates will be able to", "[verb]", "[ethical/humanistic/constitutional/moral values]", "in", "[decision-making or behavior]"],
-    verbs: ["practice", "apply", "uphold", "demonstrate"]
+  "ASPIRATIONAL-Skill-Task Completion": {
+    template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
+    verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "Student Contribution – Ask": {
-    template: ["Graduates will be able to", "[verb]", "[relevant questions]", "to", "[enhance/advance learning]"],
-    verbs: ["pose", "raise", "frame", "formulate"]
-  },
-  
-  "Student Contribution – Risks": {
-    template: ["Graduates will be able to", "[verb]", "potential", "[risks or unintended effects]", "associated with", "[learning actions or decisions]"],
-    verbs: ["anticipate", "recognize", "acknowledge", "evaluate"]
-  },
-  
-  "Student Contribution – Risks": {
-    verbs: ["analyze", "identify", "discuss", "reflect"],
-    template: ["Students will be able to", "[verb]", "[possible risks/errors]", "when", "[working on tasks/applying concepts]"],
-    example: "Students will be able to identify possible risks of misapplying the chain rule when solving composite function derivatives."
-  },
-  "Student Contribution – Group": {
-    template: ["Graduates will be able to", "[verb]", "actively in", "[group discussions/projects]", "to", "[advance subject understanding]"],
-    verbs: ["participate", "contribute", "collaborate", "engage"]
-  },
-  "Subject Evolution – Temporal": {
-    template: ["Graduates will be able to", "[verb]", "the evolution of", "[subject]", "across", "[time and cultures]"],
-    verbs: ["trace", "analyze", "reflect on", "study"]
-  },
-  "Subject Evolution – Human": {
-    template: ["Graduates will be able to", "[verb]", "the contributions of", "[diverse individuals/groups]", "to", "[subject topics]"],
-    verbs: ["recognize", "acknowledge", "appreciate", "explore"]
+  "INTEGRATIVE-Skill-Task Completion": {
+    template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
+    verbs: ["perform", "carry out", "execute", "operate"]
   }
 };
   const calculusExamples = {
