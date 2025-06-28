@@ -88,14 +88,14 @@
 <label for="zerothSelect">Select a Graduate Attribute (GA):</label>
 <select id="zerothSelect">
   <option value="">-- Select a GA --</option>
-  <option value="1">GA1</option>
-<option value="2">GA2</option>
-<option value="3">GA3</option>
-<option value="4">GA4</option>
-<option value="5">GA5</option>
-<option value="6">GA6</option>
-<option value="7">GA7</option>
-<option value="8">GA8</option>
+  <option value="1">Knowledge and Understanding</option>
+<option value="2">Generic Learning Outcomes</option>
+<option value="3">Application of Knowledge and Skills</option>
+<option value="4">General, Tech, and Prof. Skills</option>
+<option value="5">Constitutional, Humanistic, Ethical Values</option>
+<option value="6">Employability and Entrepreneurship</option>
+<option value="7">Student Contribution</option>
+<option value="8">Subject Evolution</option>
 
 
 </select>
@@ -289,22 +289,22 @@ function populateBroadGAs(category = "") {
   let allowedKeys = [];
 
   if (category === "1") {
-    allowedKeys = ["Sub-GA 1", "Sub-GA 2"];
+    allowedKeys = ["Knowledge/Understanding-Concept", "Knowledge/Understanding-Procedure", "Knowledge/Understanding-Linking Ideas"];
   } else if (category === "2") {
-    allowedKeys = ["Sub-GA 3", "Sub-GA 4"];
+    allowedKeys = ["Skill-Task Completion", "Skill-Analyze", "Skill-Select/Evaluate"];
   } else if (category === "3") {
-    allowedKeys = ["Sub-GA 5", "Sub-GA 6"];
+    allowedKeys = ["Application of Knowledge", "Application of Skill"];
   } else if (category === "4") {
-    allowedKeys = ["Sub-GA 7", "Sub-GA 8"];
+    allowedKeys = ["Gen-Communication-Write/Oral/Read/Listen", "Gen-Critical/Judge/Responsibility", "Gen-IndependentLearning/IdentifyProblems"];
 } else if (category === "5") {
-    allowedKeys = ["Sub-GA 9"];
+    allowedKeys = ["Empl-Job readiness", "Empl-Group work", "Empl-Responsible for self-work"];
   }
 else if (category === "6") {
-  allowedKeys = ["Sub-GA 10"];
+  allowedKeys = ["Ethic-Practice-Constitution/Human/Moral"];
 } else if (category === "7") {
-  allowedKeys = ["Sub-GA 11"];
+  allowedKeys = ["StudentContri-Asking Questions", "StudentContri-Group Tasks", "StudentContri-Risk Taking"];
 } else if (category === "8") {
-  allowedKeys = ["Sub-GA 12"];
+  allowedKeys = ["SubjectEvol-Over Time", "SubjectEvol-Human"];
 }
 
   Object.keys(gaOptions).forEach(ga => {
