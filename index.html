@@ -118,7 +118,7 @@
 <button onclick="if (isGAInputValid()) finalizeGA()">Save this as the last GA</button>
 </div>
 <div class="confirmed-list" style="background-color: #e9f7ef; border-left: 6px solid #2ecc71; padding: 1rem; border-radius: 6px;">
-<h3 style="color: #1e8449;">You will see GAs developed by you below.</h3>
+<h3 style="color: #1e8449;">Your Graduate Attributes (program learning outcomes will populate below.</h3>
 <ul id="gaList" style="font-weight: bold; font-size: 1.05rem;"></ul>
 </div>
 <div id="preStep2Buttons" style="margin-top: 2rem; display: none;">
@@ -220,52 +220,52 @@ const sentenceStructures = {
     verbs: ["perform", "carry out", "execute", "operate"]
   },
 "STANDARD-Skill-Task Completion": {
-    template: ["Graduates will be able to", "[verb]", "key", "[concepts/theories/principles]", "in", "[disciplinary or multidisciplinary contexts]"],
-    verbs: ["understand", "demonstrate", "develop", "articulate"]
+    template: ["Graduates will be able to", "[verb]", "[domain-specific tasks/operations]", "required in", "[disciplinary contexts]"],
+    verbs: ["perform", "carry out", "operate"]
   },
   "DEVELOPMENTAL-Skill-Task Completion": {
-    template: ["Graduates will be able to", "[verb]", "[methods/procedures]", "relevant to", "[discipline/task]"],
-    verbs: ["apply", "perform", "demonstrate", "use"]
+    template: ["Graduates will", "[verb]", "foundational", "[technical/cognitive tasks relevant to field]", "through strucutured learning."],
+    verbs: ["perform", "carry out", "operate"]
   },
   "ASPIRATIONAL-Skill-Task Completion": {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
-    verbs: ["connect", "relate", "integrate", "combine"]
+    verbs: ["perform", "carry out", "operate"]
   },
   "INTEGRATIVE-Skill-Task Completion": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
-    verbs: ["perform", "carry out", "execute", "operate"]
+    verbs: ["perform", "carry out", "operate"]
   },
 "STANDARD-Skill-Task Completion": {
     template: ["Graduates will be able to", "[verb]", "key", "[concepts/theories/principles]", "in", "[disciplinary or multidisciplinary contexts]"],
-    verbs: ["understand", "demonstrate", "develop", "articulate"]
+    verbs: ["perform", "carry out", "operate"]
   },
   "DEVELOPMENTAL-Skill-Task Completion": {
     template: ["Graduates will be able to", "[verb]", "[methods/procedures]", "relevant to", "[discipline/task]"],
-    verbs: ["apply", "perform", "demonstrate", "use"]
+    verbs: ["perform", "carry out", "operate"]
   },
   "ASPIRATIONAL-Skill-Task Completion": {
-    template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
-    verbs: ["connect", "relate", "integrate", "combine"]
+    template: ["Graduates will", "[verb]", "and value the importance of completing", "[discipline-specific tasks]"],
+    verbs: ["perform", "carry out", "operate"]
   },
   "INTEGRATIVE-Skill-Task Completion": {
-    template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
-    verbs: ["perform", "carry out", "execute", "operate"]
+    template: ["Graduates will", "[verb]", "relevant", "[technical/cognitive tasks]", "from", "discipline", "to address challenges in", "[interdisciplinary or real-world contexts.]"],
+    verbs: ["perform", "carry out", "operate"]
   },
 "STANDARD-Skill-Analyze": {
     template: ["Graduates will be able to", "[verb]", "key", "[concepts/theories/principles]", "in", "[disciplinary or multidisciplinary contexts]"],
-    verbs: ["understand", "demonstrate", "develop", "articulate"]
+    verbs: ["analyze", "evaluate", "synthesize"]
   },
   "DEVELOPMENTAL-Skill-Analyze": {
     template: ["Graduates will be able to", "[verb]", "[methods/procedures]", "relevant to", "[discipline/task]"],
-    verbs: ["apply", "perform", "demonstrate", "use"]
+    verbs: ["analyze", "evaluate", "synthesize"]
   },
   "ASPIRATIONAL-Skill-Analyze": {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
-    verbs: ["connect", "relate", "integrate", "combine"]
+    verbs: ["analyze", "evaluate", "synthesize"]
   },
   "INTEGRATIVE-Skill-Analyze": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
-    verbs: ["perform", "carry out", "execute", "operate"]
+    verbs: ["analyze", "evaluate", "synthesize"]
   },
 "STANDARD-Skill-Select/Evaluate": {
     template: ["Graduates will be able to", "[verb]", "key", "[concepts/theories/principles]", "in", "[disciplinary or multidisciplinary contexts]"],
@@ -521,10 +521,10 @@ const sentenceStructures = {
   "DEVELOPMENTAL-Knowledge/Understanding-Linking Ideas": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-Knowledge/Understanding-Linking Ideas": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
   "INTEGRATIVE-Knowledge/Understanding-Linking Ideas": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
-  "STANDARD-Skill-Task Completion": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
-  "DEVELOPMENTAL-Skill-Task Completion": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
-  "ASPIRATIONAL-Skill-Task Completion": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-Skill-Task Completion": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "STANDARD-Skill-Task Completion": "Graduates will be able to perform calculations and symbolic manipulations required in mathematical problem solving.",
+  "DEVELOPMENTAL-Skill-Task Completion": "Graduates will carry out foundational computational tasks such as solving equations and transforming functions through structured learning.",
+  "ASPIRATIONAL-Skill-Task Completion": "Graduates will perform and value the importance of completing mathematical modeling.",
+  "INTEGRATIVE-Skill-Task Completion": "Graduates will carry out relevant mathematical tasks from differential equations and statistics to address challenges in engineering and public policy.",
   "STANDARD-Skill-Analyze": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-Skill-Analyze": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-Skill-Analyze": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
