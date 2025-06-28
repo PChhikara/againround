@@ -147,26 +147,26 @@
 </section>
 <script>
 const gaOptions = {
-  "Knowledge/Understanding-Concept": ["Knowledge – Concepts", "Knowledge – Procedures", "Knowledge – Linking"],
-  "Knowledge/Understanding-Procedure": ["Skills – Task", "Skills – Analyze", "Skills – Select/Evaluate"],
-  "Knowledge/Understanding-Linking Ideas": ["Application – Knowledge", "Application – Skill"],
-  "Skill-Task Completion": ["Generic – Communication", "Generic – Critical Judgment", "Generic – Own Learning"],
-  "Skill-Analyze": ["Employability – Readiness", "Employability – Teamwork", "Employability – Ownership"],
-  "Skill-Select/Evaluate": ["Ethics & Values – Practice"],
-  "Application of Knowledge": ["Student Contribution – Ask", "Student Contribution – Group", "Student Contribution – Risks"],
-  "Application of Skill": ["Subject Evolution – Temporal", "Subject Evolution – Human"],
-"Gen-Communication-Write/Oral/Read/Listen": ["ABC 1", "ABC 2", "ABC 3"],
-      "Gen-Critical/Judge/Responsibility": ["ABC 1", "ABC 2", "ABC 3"],
-      "Gen-IndependentLearning/IdentifyProblems": ["ABC 1", "ABC 2", "ABC 3"],
-      "Empl-Job readiness": ["ABC 1", "ABC 2", "ABC 3"],
-    "Empl-Group work": ["ABC 1", "ABC 2", "ABC 3"],
-    "Empl-Responsible for self-work": ["DEF 1", "DEF 2", "DEF 3"],
-"Ethic-Practice-Constitution/Human/Moral": ["GHI 1", "GHI 2", "GHI 3"],
-    "StudentContri-Asking Questions": ["GHI 1", "GHI 2", "GHI 3"],
-    "StudentContri-Group Tasks": ["GHI 1", "GHI 2", "GHI 3"],
-    "StudentContri-Risk Taking": ["GHI 1", "GHI 2", "GHI 3"],
-    "SubjectEvol-Over Time": ["GHI 1", "GHI 2", "GHI 3"],
-"SubjectEvol-Human": ["JKL 1", "JKL 2", "JKL 3"]
+  "Knowledge/Understanding-Concept": ["STANDARD-Knowledge/Understanding-Concept", "DEVELOPMENTAL-Knowledge/Understanding-Concept", "ASPIRATIONAL-Knowledge/Understanding-Concept" , "INTEGRATIVE-Knowledge/Understanding-Concept"],
+  "Knowledge/Understanding-Procedure": ["STANDARD-Knowledge/Understanding-Procedure", "DEVELOPMENTAL-Knowledge/Understanding-Procedure", "ASPIRATIONAL-Knowledge/Understanding-Procedure", "INTEGRATIVE-Knowledge/Understanding-Procedure"],
+  "Knowledge/Understanding-Linking Ideas": ["STANDARD-Knowledge/Understanding-Linking Ideas", "DEVELOPMENTAL-Knowledge/Understanding-Linking Ideas", "ASPIRATIONAL-Knowledge/Understanding-Linking Ideas", "INTEGRATIVE-Knowledge/Understanding-Linking Ideas"],
+  "Skill-Task Completion": ["STANDARD-Skill-Task Completion", "DEVELOPMENTAL-Skill-Task Completion", "ASPIRATIONAL-Skill-Task Completion", "INTEGRATIVE-Skill-Task Completion"],
+  "Skill-Analyze": ["STANDARD-Skill-Analyze", "DEVELOPMENTAL-Skill-Analyze", "ASPIRATIONAL-Skill-Analyze", "INTEGRATIVE-Skill-Analyze"],
+  "Skill-Select/Evaluate": ["STANDARD-Skill-Select/Evaluate", "DEVELOPMENTAL-Skill-Select/Evaluate", "ASPIRATIONAL-Skill-Select/Evaluate", "INTEGRATIVE-Skill-Select/Evaluate"],
+  "Application of Knowledge": ["STANDARD-Application of Knowledge", "DEVELOPMENTAL-Application of Knowledge", "ASPIRATINAL-Application of Knowledge", "INTEGRATIVE-Application of Knowledge"],
+  "Application of Skill": ["STANDARD-Application of Skill", "DEVELOPMENTAL-Application of Skill", "ASPIRATIONAL-Application of Skill", "INTEGRATIVE-Application of Skill"],
+"Gen-Communication-Write/Oral/Read/Listen": ["STANDARD-Gen-Communication-Write/Oral/Read/Listen", "DEVELOPMENTAL-Gen-Communication-Write/Oral/Read/Listen", "ASPIRATIONAL-Gen-Communication-Write/Oral/Read/Listen", "INTEGRATIVE-Gen-Communication-Write/Oral/Read/Listen"],
+      "Gen-Critical/Judge/Responsibility": ["STANDARD-Gen-Critical/Judge/Responsibility", "DEVELOPMENTAL-Gen-Critical/Judge/Responsibility", "ASPIRATIONAL-Gen-Critical/Judge/Responsibility", "INTEGRATIVE-Gen-Critical/Judge/Responsibility"],
+      "Gen-IndependentLearning/IdentifyProblems": ["STANDARD-Gen-IndependentLearning/IdentifyProblems", "DEVELOPMENTAL-Gen-IndependentLearning/IdentifyProblems", "ASPIRATIONAL-Gen-IndependentLearning/IdentifyProblems", "INTEGRATIVE-Gen-IndependentLearning/IdentifyProblems"],
+      "Empl-Job readiness": ["STANDARD-Empl-Job readiness", "DEVELOPMENTAL-Empl-Job readiness", "ASPIRATIONAL-Empl-Job readiness", "INTEGRATIVE-Empl-Job readiness"],
+    "Empl-Group work": ["STANDARD-Empl-Group work", "DEVELOPMENTAL-Empl-Group work", "ASPIRATIONAL-Empl-Group work", "INTEGRATIVE-Empl-Group work"],
+    "Empl-Responsible for self-work": ["STANDARD-Empl-Responsible for self-work", "DEVELOPMENATAL-Empl-Responsible for self-work", "ASPIRATIONAL-Empl-Responsible for self-work", "INTEGRATIVE-Empl-Responsible for self-work"],
+"Ethic-Practice-Constitution/Human/Moral": ["STANDARD-Ethic-Practice-Constitution/Human/Moral", "DEVELOPMENTAL-Ethic-Practice-Constitution/Human/Moral", "ASPIRATIONAL-Ethic-Practice-Constitution/Human/Moral", "INTEGRATIVE-Ethic-Practice-Constitution/Human/Moral"],
+    "StudentContri-Asking Questions": ["STANDARD-StudentContri-Asking Questions", "DEVELOPMENTAL-StudentContri-Asking Questions", "ASPIRATIONAL-StudentContri-Asking Questions", "INTEGRATIVE-StudentContri-Asking Questions"],
+    "StudentContri-Group Tasks": ["STANDARD-StudentContri-Group Tasks", "DEVELOPMENTAL-StudentContri-Group Tasks", "ASPIRATIONAL-StudentContri-Group Tasks", "INTEGRATIVE-StudentContri-Group Tasks"],
+    "StudentContri-Risk Taking": ["STANDARD-StudentContri-Risk Taking", "DEVELOPMENTAL-StudentContri-Risk Taking", "ASPIRATIONAL-StudentContri-Risk Taking", "INTEGRATIVE-StudentContri-Risk Taking"],
+    "SubjectEvol-Over Time": ["STANDARD-SubjectEvol-Over Time", "DEVELOPMENTAL-SubjectEvol-Over Time", "ASPIRATIONAL-SubjectEvol-Over Time", "INTEGRATIVE-SubjectEvol-Over Time"],
+"SubjectEvol-Human": ["STANDARD-SubjectEvol-Human", "DEVELOPMENTAL-SubjectEvol-Human", "ASPIRATIONAL-SubjectEvol-Human", "INTEGRATIVE-SubjectEvol-Human"]
 };
 
 const confirmedGAs = [];
