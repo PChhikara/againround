@@ -1645,26 +1645,6 @@ function handleGASelectStep2() {
   const container = document.getElementById("cloDisplayBlock");
   container.innerHTML = "";
 
-  const label = document.createElement("label");
-  label.textContent = "Now select a Sub-GA:";
-  label.style.fontWeight = "bold";
-  label.style.marginTop = "1rem";
-  container.appendChild(label);
-
-  const subgaDropdown = document.createElement("select");
-  subgaDropdown.id = "step2SubGADropdown";
-  subgaDropdown.innerHTML = '<option value="">-- Select Sub-GA --</option>';
-  subgaDropdown.style.marginBottom = "1rem";
-  subgaDropdown.style.marginLeft = "10px";
-
-  step2SubGAOptions.forEach(subga => {
-    const opt = document.createElement("option");
-    opt.value = subga;
-    opt.textContent = subga;
-    subgaDropdown.appendChild(opt);
-  });
-
-  container.appendChild(subgaDropdown);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -1957,30 +1937,7 @@ document.getElementById("zerothSelect").addEventListener("change", function () {
 
   if (!gaDropdown || !blockContainer || !cloDisplay) return;
 
-  gaDropdown.addEventListener("change", () => {
-    const label = document.createElement("label");
-    label.textContent = "Now select a Sub-GA for the GA above:";
-    label.style.fontWeight = "bold";
-    const helpIcon = document.createElement("span");
-    helpIcon.textContent = " (?)";
-    helpIcon.title = "This is the text in your above GA before colon sign";
-    helpIcon.style.cursor = "help";
-    label.appendChild(helpIcon);
-    cloDisplay.innerHTML = "";
-    cloDisplay.appendChild(label);
-
-    const subgaDropdown = document.createElement("select");
-    subgaDropdown.id = "step2SubGADropdown";
-    subgaDropdown.style.margin = "1rem 0";
-    subgaDropdown.innerHTML = '<option value="">-- Select Sub-GA --</option>';
-    Object.keys(cloTemplates).forEach(subga => {
-      const opt = document.createElement("option");
-      opt.value = subga;
-      opt.textContent = subga;
-      subgaDropdown.appendChild(opt);
-    });
-    cloDisplay.appendChild(subgaDropdown);
-
+  
     const output = document.createElement("div");
     output.id = "cloStructureDisplay";
     cloDisplay.appendChild(output);
