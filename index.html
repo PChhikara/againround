@@ -114,8 +114,8 @@ Tool designed by <strong>Praveen Chhikara</strong>
 </select>
 <p id="exampleDisplay" style="font-style: italic; color: #6c757d;"></p><div id="sentenceStructure" style="margin-top: 1rem;"></div>
 <div id="gaButtons" style="display:none">
-<button onclick="if (isGAInputValid()) saveGA()">Save and Add another GA</button>
-<button onclick="if (isGAInputValid()) finalizeGA()">Save this as the last GA</button>
+<button onclick="if (isGAInputValid()) saveGA()">Save this GA & Add more GAs</button>
+<button onclick="if (isGAInputValid()) finalizeGA()">Save this GA & No more GAs</button>
 </div>
 <div class="confirmed-list" style="background-color: #e9f7ef; border-left: 6px solid #2ecc71; padding: 1rem; border-radius: 6px;">
 <h3 style="color: #1e8449;">Your Graduate Attributes (program learning outcomes will populate below.</h3>
@@ -1962,7 +1962,7 @@ document.getElementById("zerothSelect").addEventListener("change", function () {
       btnContainer.style.marginTop = "1rem";
 
       const saveBtn = document.createElement("button");
-      saveBtn.textContent = "Save and Add CLO for current GA";
+      saveBtn.textContent = "Save this CLO & Add more CLOs for current GA";
       
 
 saveBtn.onclick = () => {
@@ -2080,7 +2080,7 @@ saveBtn.onclick = () => {
 
 
   const moveBtn = document.createElement("button");
-  moveBtn.textContent = "Move to another GA";
+  moveBtn.textContent = "No more CLOs for this GA & Add another GA from Step 1";
   moveBtn.style.marginLeft = "1rem";
   moveBtn.onclick = () => {
     const label = document.querySelector("label[for='gaSelectDropdown']");
