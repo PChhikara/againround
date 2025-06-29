@@ -650,12 +650,13 @@ function updateSubGAs() {
       opt.value = sub;
       opt.textContent = sub;
       subGASelect.appendChild(opt);
-  const subGALabel = document.querySelector('label[for="gaSelect"]');
-  if (subGALabel) {
-    subGALabel.classList.add("highlight-label");
-    subGALabel.scrollIntoView({ behavior: "smooth", block: "center" });
-    setTimeout(() => subGALabel.classList.remove("highlight-label"), 2000);
-  }
+ const broadGALabel = document.querySelector('label[for="broadGA"]');
+if (broadGALabel) {
+  broadGALabel.classList.add("highlight-label");
+  broadGALabel.scrollIntoView({ behavior: "smooth", block: "center" });
+  setTimeout(() => broadGALabel.classList.remove("highlight-label"), 2000);
+}
+
 
     });
   }
