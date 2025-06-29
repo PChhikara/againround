@@ -75,13 +75,13 @@
   <h2 style="color: #003366;">Ready-to-use Tool for Developing Graduate Attributes and Course Learning Outcomes</h2>
   <p style="font-style: italic; color: #333;">(Inspired from NEP 2020's holistic education goals)</p>
   <p style="max-width: 800px; margin: 0 auto; font-size: 1rem; color: #444; text-align: left;">
-    Developed to assist Indian university departments in designing Graduate Attributes and Course Learning Outcomes aligned with NEP 2020.
+    Developed to assist Indian university departments in designing Graduate Attributes (or Program Learning Outcomes) and Course Learning Outcomes aligned with NEP 2020.
 Tool designed by <strong>Praveen Chhikara</strong>
   </p>
 </div>
 
 <section>
-<h2>Step 1: Develop around 8 Graduate Attributes for your program</h2>
+<h2>Step 1: Develop around 8 Graduate Attributes (or Program Learning Outcomes) for your program</h2>
 <label for="programName">Program Name (e.g., BSc Mathematics):</label>
 <input id="programName" placeholder="Enter program name" style="width: 100%;" type="text"/>
 
@@ -146,26 +146,26 @@ Tool designed by <strong>Praveen Chhikara</strong>
 </section>
 <script>
 const gaOptions = {
-  "Knowledge/Understanding-Concept": ["STANDARD-Knowledge/Understanding-Concept", "DEVELOPMENTAL-Knowledge/Understanding-Concept", "ASPIRATIONAL-Knowledge/Understanding-Concept" , "INTEGRATIVE-Knowledge/Understanding-Concept"],
-  "Knowledge/Understanding-Procedure": ["STANDARD-Knowledge/Understanding-Procedure", "DEVELOPMENTAL-Knowledge/Understanding-Procedure", "ASPIRATIONAL-Knowledge/Understanding-Procedure", "INTEGRATIVE-Knowledge/Understanding-Procedure"],
-  "Knowledge/Understanding-Linking Ideas": ["STANDARD-Knowledge/Understanding-Linking Ideas", "DEVELOPMENTAL-Knowledge/Understanding-Linking Ideas", "ASPIRATIONAL-Knowledge/Understanding-Linking Ideas", "INTEGRATIVE-Knowledge/Understanding-Linking Ideas"],
-  "Skill-Task Completion": ["STANDARD-Skill-Task Completion", "DEVELOPMENTAL-Skill-Task Completion", "ASPIRATIONAL-Skill-Task Completion", "INTEGRATIVE-Skill-Task Completion"],
-  "Skill-Analyze": ["STANDARD-Skill-Analyze", "DEVELOPMENTAL-Skill-Analyze", "ASPIRATIONAL-Skill-Analyze", "INTEGRATIVE-Skill-Analyze"],
-  "Skill-Select/Evaluate": ["STANDARD-Skill-Select/Evaluate", "DEVELOPMENTAL-Skill-Select/Evaluate", "ASPIRATIONAL-Skill-Select/Evaluate", "INTEGRATIVE-Skill-Select/Evaluate"],
-  "Application of Knowledge": ["STANDARD-Application of Knowledge", "DEVELOPMENTAL-Application of Knowledge", "ASPIRATINAL-Application of Knowledge", "INTEGRATIVE-Application of Knowledge"],
-  "Application of Skill": ["STANDARD-Application of Skill", "DEVELOPMENTAL-Application of Skill", "ASPIRATIONAL-Application of Skill", "INTEGRATIVE-Application of Skill"],
-"Gen-Communication-Write/Oral/Read/Listen": ["STANDARD-Gen-Communication-Write/Oral/Read/Listen", "DEVELOPMENTAL-Gen-Communication-Write/Oral/Read/Listen", "ASPIRATIONAL-Gen-Communication-Write/Oral/Read/Listen", "INTEGRATIVE-Gen-Communication-Write/Oral/Read/Listen"],
-      "Gen-Critical/Judge/Responsibility": ["STANDARD-Gen-Critical/Judge/Responsibility", "DEVELOPMENTAL-Gen-Critical/Judge/Responsibility", "ASPIRATIONAL-Gen-Critical/Judge/Responsibility", "INTEGRATIVE-Gen-Critical/Judge/Responsibility"],
-      "Gen-IndependentLearning/IdentifyProblems": ["STANDARD-Gen-IndependentLearning/IdentifyProblems", "DEVELOPMENTAL-Gen-IndependentLearning/IdentifyProblems", "ASPIRATIONAL-Gen-IndependentLearning/IdentifyProblems", "INTEGRATIVE-Gen-IndependentLearning/IdentifyProblems"],
-      "Empl-Job readiness": ["STANDARD-Empl-Job readiness", "DEVELOPMENTAL-Empl-Job readiness", "ASPIRATIONAL-Empl-Job readiness", "INTEGRATIVE-Empl-Job readiness"],
-    "Empl-Group work": ["STANDARD-Empl-Group work", "DEVELOPMENTAL-Empl-Group work", "ASPIRATIONAL-Empl-Group work", "INTEGRATIVE-Empl-Group work"],
-    "Empl-Responsible for self-work": ["STANDARD-Empl-Responsible for self-work", "DEVELOPMENATAL-Empl-Responsible for self-work", "ASPIRATIONAL-Empl-Responsible for self-work", "INTEGRATIVE-Empl-Responsible for self-work"],
-"Ethic-Practice-Constitution/Human/Moral": ["STANDARD-Ethic-Practice-Constitution/Human/Moral", "DEVELOPMENTAL-Ethic-Practice-Constitution/Human/Moral", "ASPIRATIONAL-Ethic-Practice-Constitution/Human/Moral", "INTEGRATIVE-Ethic-Practice-Constitution/Human/Moral"],
-    "StudentContri-Asking Questions": ["STANDARD-StudentContri-Asking Questions", "DEVELOPMENTAL-StudentContri-Asking Questions", "ASPIRATIONAL-StudentContri-Asking Questions", "INTEGRATIVE-StudentContri-Asking Questions"],
-    "StudentContri-Group Tasks": ["STANDARD-StudentContri-Group Tasks", "DEVELOPMENTAL-StudentContri-Group Tasks", "ASPIRATIONAL-StudentContri-Group Tasks", "INTEGRATIVE-StudentContri-Group Tasks"],
-    "StudentContri-Risk Taking": ["STANDARD-StudentContri-Risk Taking", "DEVELOPMENTAL-StudentContri-Risk Taking", "ASPIRATIONAL-StudentContri-Risk Taking", "INTEGRATIVE-StudentContri-Risk Taking"],
-    "SubjectEvol-Over Time": ["STANDARD-SubjectEvol-Over Time", "DEVELOPMENTAL-SubjectEvol-Over Time", "ASPIRATIONAL-SubjectEvol-Over Time", "INTEGRATIVE-SubjectEvol-Over Time"],
-"SubjectEvol-Human": ["STANDARD-SubjectEvol-Human", "DEVELOPMENTAL-SubjectEvol-Human", "ASPIRATIONAL-SubjectEvol-Human", "INTEGRATIVE-SubjectEvol-Human"]
+  "Knowledge/Understanding-Concept": ["STANDARD-Knowledge/Understanding-Concept", "DEVELOPMENTAL-Knowledge/Understanding-Concept", "ASPIRATIONAL-Knowledge/Understanding-Concept" , "INTERDISCIPLINARY-Knowledge/Understanding-Concept"],
+  "Knowledge/Understanding-Procedure": ["STANDARD-Knowledge/Understanding-Procedure", "DEVELOPMENTAL-Knowledge/Understanding-Procedure", "ASPIRATIONAL-Knowledge/Understanding-Procedure", "INTERDISCIPLINARY-Knowledge/Understanding-Procedure"],
+  "Knowledge/Understanding-Linking Ideas": ["STANDARD-Knowledge/Understanding-Linking Ideas", "DEVELOPMENTAL-Knowledge/Understanding-Linking Ideas", "ASPIRATIONAL-Knowledge/Understanding-Linking Ideas", "INTERDISCIPLINARY-Knowledge/Understanding-Linking Ideas"],
+  "Skill-Task Completion": ["STANDARD-Skill-Task Completion", "DEVELOPMENTAL-Skill-Task Completion", "ASPIRATIONAL-Skill-Task Completion", "INTERDISCIPLINARY-Skill-Task Completion"],
+  "Skill-Analyze": ["STANDARD-Skill-Analyze", "DEVELOPMENTAL-Skill-Analyze", "ASPIRATIONAL-Skill-Analyze", "INTERDISCIPLINARY-Skill-Analyze"],
+  "Skill-Select/Evaluate": ["STANDARD-Skill-Select/Evaluate", "DEVELOPMENTAL-Skill-Select/Evaluate", "ASPIRATIONAL-Skill-Select/Evaluate", "INTERDISCIPLINARY-Skill-Select/Evaluate"],
+  "Application of Knowledge": ["STANDARD-Application of Knowledge", "DEVELOPMENTAL-Application of Knowledge", "ASPIRATINAL-Application of Knowledge", "INTERDISCIPLINARY-Application of Knowledge"],
+  "Application of Skill": ["STANDARD-Application of Skill", "DEVELOPMENTAL-Application of Skill", "ASPIRATIONAL-Application of Skill", "INTERDISCIPLINARY-Application of Skill"],
+"Gen-Communication-Write/Oral/Read/Listen": ["STANDARD-Gen-Communication-Write/Oral/Read/Listen", "DEVELOPMENTAL-Gen-Communication-Write/Oral/Read/Listen", "ASPIRATIONAL-Gen-Communication-Write/Oral/Read/Listen", "INTERDISCIPLINARY-Gen-Communication-Write/Oral/Read/Listen"],
+      "Gen-Critical/Judge/Responsibility": ["STANDARD-Gen-Critical/Judge/Responsibility", "DEVELOPMENTAL-Gen-Critical/Judge/Responsibility", "ASPIRATIONAL-Gen-Critical/Judge/Responsibility", "INTERDISCIPLINARY-Gen-Critical/Judge/Responsibility"],
+      "Gen-IndependentLearning/IdentifyProblems": ["STANDARD-Gen-IndependentLearning/IdentifyProblems", "DEVELOPMENTAL-Gen-IndependentLearning/IdentifyProblems", "ASPIRATIONAL-Gen-IndependentLearning/IdentifyProblems", "INTERDISCIPLINARY-Gen-IndependentLearning/IdentifyProblems"],
+      "Empl-Job readiness": ["STANDARD-Empl-Job readiness", "DEVELOPMENTAL-Empl-Job readiness", "ASPIRATIONAL-Empl-Job readiness", "INTERDISCIPLINARY-Empl-Job readiness"],
+    "Empl-Group work": ["STANDARD-Empl-Group work", "DEVELOPMENTAL-Empl-Group work", "ASPIRATIONAL-Empl-Group work", "INTERDISCIPLINARY-Empl-Group work"],
+    "Empl-Responsible for self-work": ["STANDARD-Empl-Responsible for self-work", "DEVELOPMENATAL-Empl-Responsible for self-work", "ASPIRATIONAL-Empl-Responsible for self-work", "INTERDISCIPLINARY-Empl-Responsible for self-work"],
+"Ethic-Practice-Constitution/Human/Moral": ["STANDARD-Ethic-Practice-Constitution/Human/Moral", "DEVELOPMENTAL-Ethic-Practice-Constitution/Human/Moral", "ASPIRATIONAL-Ethic-Practice-Constitution/Human/Moral", "INTERDISCIPLINARY-Ethic-Practice-Constitution/Human/Moral"],
+    "StudentContri-Asking Questions": ["STANDARD-StudentContri-Asking Questions", "DEVELOPMENTAL-StudentContri-Asking Questions", "ASPIRATIONAL-StudentContri-Asking Questions", "INTERDISCIPLINARY-StudentContri-Asking Questions"],
+    "StudentContri-Group Tasks": ["STANDARD-StudentContri-Group Tasks", "DEVELOPMENTAL-StudentContri-Group Tasks", "ASPIRATIONAL-StudentContri-Group Tasks", "INTERDISCIPLINARY-StudentContri-Group Tasks"],
+    "StudentContri-Risk Taking": ["STANDARD-StudentContri-Risk Taking", "DEVELOPMENTAL-StudentContri-Risk Taking", "ASPIRATIONAL-StudentContri-Risk Taking", "INTERDISCIPLINARY-StudentContri-Risk Taking"],
+    "SubjectEvol-Over Time": ["STANDARD-SubjectEvol-Over Time", "DEVELOPMENTAL-SubjectEvol-Over Time", "ASPIRATIONAL-SubjectEvol-Over Time", "INTERDISCIPLINARY-SubjectEvol-Over Time"],
+"SubjectEvol-Human": ["STANDARD-SubjectEvol-Human", "DEVELOPMENTAL-SubjectEvol-Human", "ASPIRATIONAL-SubjectEvol-Human", "INTERDISCIPLINARY-SubjectEvol-Human"]
 };
 
 const confirmedGAs = [];
@@ -182,7 +182,7 @@ const sentenceStructures = {
     template: ["Graduates will", "[verb]", "and appreciate the role of", "[conceptual knowledge]", "in", "[discipline]"],
     verbs: ["demonstrate","understand", "grasp"]
   },
-  "INTEGRATIVE-Knowledge/Understanding-Concept": {
+  "INTERDISCIPLINARY-Knowledge/Understanding-Concept": {
     template: ["Graduates will", "[verb]", "conceptual knowledge from", "[discipline]", "and relate it to", "[other domain/real-world problems]"],
     verbs: ["demonstrate","understand", "grasp"]
   },
@@ -198,7 +198,7 @@ const sentenceStructures = {
     template: ["Graduates will", "[verb]", "and appreciate the role of", "[procedural methods]", "in", "[enabling problem-solving and real-world application in the field]"],
     verbs: ["apply", "perform", "demonstrate"]
   },
-  "INTEGRATIVE-Knowledge/Understanding-Procedure": {
+  "INTERDISCIPLINARY-Knowledge/Understanding-Procedure": {
     template: ["Graduates will", "[verb]", "procedural knowledge from", "[discipline]", "to its applications in", "[interdisciplinary or real-world domains]"],
     verbs: ["apply", "perform", "demonstrate"]
   },
@@ -214,7 +214,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "INTEGRATIVE-Knowledge/Understanding-Concept": {
+  "INTERDISCIPLINARY-Knowledge/Understanding-Concept": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   },
@@ -230,7 +230,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["perform", "carry out", "operate"]
   },
-  "INTEGRATIVE-Skill-Task Completion": {
+  "INTERDISCIPLINARY-Skill-Task Completion": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "operate"]
   },
@@ -246,7 +246,7 @@ const sentenceStructures = {
     template: ["Graduates will", "[verb]", "and value the importance of completing", "[discipline-specific tasks]"],
     verbs: ["perform", "carry out", "operate"]
   },
-  "INTEGRATIVE-Skill-Task Completion": {
+  "INTERDISCIPLINARY-Skill-Task Completion": {
     template: ["Graduates will", "[verb]", "relevant", "[technical/cognitive tasks]", "from", "discipline", "to address challenges in", "[interdisciplinary or real-world contexts.]"],
     verbs: ["perform", "carry out", "operate"]
   },
@@ -262,7 +262,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["analyze", "evaluate", "synthesize"]
   },
-  "INTEGRATIVE-Skill-Analyze": {
+  "INTERDISCIPLINARY-Skill-Analyze": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["analyze", "evaluate", "synthesize"]
   },
@@ -278,7 +278,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "INTEGRATIVE-Skill-Select/Evaluate": {
+  "INTERDISCIPLINARY-Skill-Select/Evaluate": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   },
@@ -294,7 +294,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "INTEGRATIVE-Application of Knowledge": {
+  "INTERDISCIPLINARY-Application of Knowledge": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   },
@@ -310,7 +310,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "INTEGRATIVE-Application of Skill": {
+  "INTERDISCIPLINARY-Application of Skill": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   },
@@ -326,7 +326,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "INTEGRATIVE-Gen-Communication-Write/Oral/Read/Listen": {
+  "INTERDISCIPLINARY-Gen-Communication-Write/Oral/Read/Listen": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   },
@@ -342,7 +342,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "INTEGRATIVE-Gen-Critical/Judge/Responsibility": {
+  "INTERDISCIPLINARY-Gen-Critical/Judge/Responsibility": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   },
@@ -358,7 +358,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "INTEGRATIVE-Gen-IndependentLearning/IdentifyProblems": {
+  "INTERDISCIPLINARY-Gen-IndependentLearning/IdentifyProblems": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   },
@@ -374,7 +374,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "INTEGRATIVE-Empl-Job readiness": {
+  "INTERDISCIPLINARY-Empl-Job readiness": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   },
@@ -390,7 +390,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "INTEGRATIVE-Empl-Group work": {
+  "INTERDISCIPLINARY-Empl-Group work": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   },
@@ -406,7 +406,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "INTEGRATIVE-Empl-Responsible for self-work": {
+  "INTERDISCIPLINARY-Empl-Responsible for self-work": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   },
@@ -422,7 +422,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "INTEGRATIVE-Ethic-Practice-Constitution/Human/Moral": {
+  "INTERDISCIPLINARY-Ethic-Practice-Constitution/Human/Moral": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   },
@@ -438,7 +438,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "INTEGRATIVE-StudentContri-Asking Questions": {
+  "INTERDISCIPLINARY-StudentContri-Asking Questions": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   },
@@ -454,7 +454,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "INTEGRATIVE-StudentContri-Group Tasks": {
+  "INTERDISCIPLINARY-StudentContri-Group Tasks": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   },
@@ -470,7 +470,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "INTEGRATIVE-StudentContri-Risk Taking": {
+  "INTERDISCIPLINARY-StudentContri-Risk Taking": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   },
@@ -486,7 +486,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "INTEGRATIVE-SubjectEvol-Over Time": {
+  "INTERDISCIPLINARY-SubjectEvol-Over Time": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   },
@@ -502,7 +502,7 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "knowledge from", "[multiple disciplines]", "to address", "[issues/problems]"],
     verbs: ["connect", "relate", "integrate", "combine"]
   },
-  "INTEGRATIVE-SubjectEvol-Human": {
+  "INTERDISCIPLINARY-SubjectEvol-Human": {
     template: ["Graduates will be able to", "[verb]", "a range of", "[technical/cognitive tasks]", "using appropriate tools and techniques"],
     verbs: ["perform", "carry out", "execute", "operate"]
   }
@@ -511,83 +511,83 @@ const sentenceStructures = {
   "STANDARD-Knowledge/Understanding-Concept": "Graduates will be able to demonstrate core concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-Knowledge/Understanding-Concept": "Graduates will grasp a foundational understanding of mathematical logic and number theory in the field of mathematics.",
   "ASPIRATIONAL-Knowledge/Understanding-Concept": "Graduates will understand and appreciate the role of set theory and mathematical proofs in the foundations of mathematics.",
-  "INTEGRATIVE-Knowledge/Understanding-Concept": "Graduates will apply procedural methods from linear algebra and calculus to its applications in modeling and interpreting systems in physics and data science.",
+  "INTERDISCIPLINARY-Knowledge/Understanding-Concept": "Graduates will apply procedural methods from linear algebra and calculus to its applications in modeling and interpreting systems in physics and data science.",
   "STANDARD-Knowledge/Understanding-Procedure": "GGraduates will be able to apply standard mathematical procedures such as integration techniques and matrix operations for solving mathematical problems.",
   "DEVELOPMENTAL-Knowledge/Understanding-Procedure": "Graduates will perform a foundational ability to use algebraic and calculus-based procedures to approach mathematical tasks.",
   "ASPIRATIONAL-Knowledge/Understanding-Procedure": "Graduates will demonstrate and appreciate the role of algorithmic and procedural knowledge in applying mathematics to real-world challenges.",
-  "INTEGRATIVE-Knowledge/Understanding-Procedure": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-Knowledge/Understanding-Procedure": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
 "STANDARD-Knowledge/Understanding-Linking Ideas": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-Knowledge/Understanding-Linking Ideas": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-Knowledge/Understanding-Linking Ideas": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-Knowledge/Understanding-Linking Ideas": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-Knowledge/Understanding-Linking Ideas": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
   "STANDARD-Skill-Task Completion": "Graduates will be able to perform calculations and symbolic manipulations required in mathematical problem solving.",
   "DEVELOPMENTAL-Skill-Task Completion": "Graduates will carry out foundational computational tasks such as solving equations and transforming functions through structured learning.",
   "ASPIRATIONAL-Skill-Task Completion": "Graduates will perform and value the importance of completing mathematical modeling.",
-  "INTEGRATIVE-Skill-Task Completion": "Graduates will carry out relevant mathematical tasks from differential equations and statistics to address challenges in engineering and public policy.",
+  "INTERDISCIPLINARY-Skill-Task Completion": "Graduates will carry out relevant mathematical tasks from differential equations and statistics to address challenges in engineering and public policy.",
   "STANDARD-Skill-Analyze": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-Skill-Analyze": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-Skill-Analyze": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-Skill-Analyze": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-Skill-Analyze": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
   "STANDARD-Skill-Select/Evaluate": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-Skill-Select/Evaluate": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-Skill-Select/Evaluate": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-Skill-Select/Evaluate": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-Skill-Select/Evaluate": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
   "STANDARD-Application of Knowledge": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-Application of Knowledge": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-Application of Knowledge": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-Application of Knowledge": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-Application of Knowledge": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
   "STANDARD-Application of Skill": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-Application of Skill": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-Application of Skill": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-Application of Skill": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-Application of Skill": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
   "STANDARD-Gen-Communication-Write/Oral/Read/Listen": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-Gen-Communication-Write/Oral/Read/Listen": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-Gen-Communication-Write/Oral/Read/Listen": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-Gen-Communication-Write/Oral/Read/Listen": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-Gen-Communication-Write/Oral/Read/Listen": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
   "STANDARD-Gen-Critical/Judge/Responsibility": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-Gen-Critical/Judge/Responsibility": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-Gen-Critical/Judge/Responsibility": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-Gen-Critical/Judge/Responsibility": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-Gen-Critical/Judge/Responsibility": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
   "STANDARD-Gen-IndependentLearning/IdentifyProblems": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-Gen-IndependentLearning/IdentifyProblems": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-Gen-IndependentLearning/IdentifyProblems": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-Gen-IndependentLearning/IdentifyProblems": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-Gen-IndependentLearning/IdentifyProblems": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
   "STANDARD-Empl-Job readiness": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-Empl-Job readiness": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-Empl-Job readiness": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-Empl-Job readiness": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-Empl-Job readiness": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
   "STANDARD-Empl-Group work": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-Empl-Group work": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-Empl-Group work": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-Empl-Group work": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-Empl-Group work": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
   "STANDARD-Empl-Responsible for self-work": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-Empl-Responsible for self-work": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-Empl-Responsible for self-work": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-Empl-Responsible for self-work": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-Empl-Responsible for self-work": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
   "STANDARD-Ethic-Practice-Constitution/Human/Moral": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-Ethic-Practice-Constitution/Human/Moral": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-Ethic-Practice-Constitution/Human/Moral": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-Ethic-Practice-Constitution/Human/Moral": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-Ethic-Practice-Constitution/Human/Moral": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
   "STANDARD-StudentContri-Asking Questions": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-StudentContri-Asking Questions": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-StudentContri-Asking Questions": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-StudentContri-Asking Questions": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-StudentContri-Asking Questions": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
   "STANDARD-StudentContri-Group Tasks": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-StudentContri-Group Tasks": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-StudentContri-Group Tasks": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-StudentContri-Group Tasks": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-StudentContri-Group Tasks": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
   "STANDARD-StudentContri-Risk Taking": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-StudentContri-Risk Taking": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-StudentContri-Risk Taking": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-StudentContri-Risk Taking": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-StudentContri-Risk Taking": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
   "STANDARD-SubjectEvol-Over Time": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-SubjectEvol-Over Time": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-SubjectEvol-Over Time": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-SubjectEvol-Over Time": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
+  "INTERDISCIPLINARY-SubjectEvol-Over Time": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques.",
   "STANDARD-SubjectEvol-Human": "Graduates will be able to understand key mathematical concepts and theorems in pure and applied mathematics.",
   "DEVELOPMENTAL-SubjectEvol-Human": "Graduates will be able to apply analytical and computational procedures relevant to mathematical modeling tasks.",
   "ASPIRATIONAL-SubjectEvol-Human": "Graduates will be able to integrate knowledge from mathematics and computer science to address interdisciplinary problems.",
-  "INTEGRATIVE-SubjectEvol-Human": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques."
+  "INTERDISCIPLINARY-SubjectEvol-Human": "Graduates will be able to perform a range of mathematical calculations and simulations using appropriate tools and techniques."
   };
 
 
@@ -824,7 +824,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "[ideas/concepts]", "across", "[disciplines/topics]"],
     example: "Students will be able to compare derivatives and integrals across algebraic and trigonometric functions."
   },
-  "INTEGRATIVE-Knowledge/Understanding-Concept": {
+  "INTERDISCIPLINARY-Knowledge/Understanding-Concept": {
     verbs: ["use", "calculate", "build", "simulate", "follow"],
     template: ["Students will be able to", "[verb]", "[tools/techniques]", "to", "[specific task]"],
     example: "Students will be able to calculate the area under a curve using definite integrals."
@@ -844,7 +844,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "[knowledge/approach]", "in", "[real/simulated context]"],
     example: "Students will be able to implement integration techniques in simulated physics problems."
   },
-  "INTEGRATIVE-Knowledge/Understanding-Procedure": {
+  "INTERDISCIPLINARY-Knowledge/Understanding-Procedure": {
     verbs: ["design", "construct", "test", "produce", "revise"],
     template: ["Students will be able to", "[verb]", "[model/solution]", "for", "[problem/task]"],
     example: "Students will be able to design a mathematical model for predicting rates of change in populations."
@@ -864,7 +864,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "[learning goals/tasks]", "for", "[course objective/context]"],
     example: "Students will be able to investigate alternative approaches to solve improper integrals."
   },
-  "INTEGRATIVE-Knowledge/Understanding-Linking Ideas": {
+  "INTERDISCIPLINARY-Knowledge/Understanding-Linking Ideas": {
     verbs: ["implement", "deliver", "follow protocols", "meet expectations"],
     template: ["Students will be able to", "[verb]", "[tasks/assignments]", "in", "[professional/academic context]"],
     example: "Students will be able to meet expectations in standardized calculus testing environments."
@@ -884,7 +884,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "[ethical/humanistic value]", "in", "[decision/context]"],
     example: "Students will be able to reflect on ethical considerations in applying calculus to real-life predictions."
   },
-  "INTEGRATIVE-Skill-Task Completion": {
+  "INTERDISCIPLINARY-Skill-Task Completion": {
     verbs: ["question", "probe", "formulate", "challenge"],
     template: ["Students will be able to", "[verb]", "[ideas/problems]", "during", "[discussion/situation]"],
     example: "Students will be able to formulate questions about the limitations of derivative-based models during classroom discussions."
@@ -905,7 +905,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "in", "[group activity]", "to", "[purpose]"],
     example: "Students will be able to collaborate in peer groups to build on others’ ideas for solving challenging integration tasks."
   },
-  "INTEGRATIVE-Skill-Analyze": {
+  "INTERDISCIPLINARY-Skill-Analyze": {
     verbs: ["describe", "compare", "explain", "outline", "map"],
     template: ["Students will be able to", "[verb]", "[historical concepts]", "related to", "[subject area]"],
     example: "Students will be able to explain the evolution of calculus from early Greek mathematics to Newton and Leibniz."
@@ -926,7 +926,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "[procedure/tool]", "to", "[problem type or task]"],
     example: "Students will be able to solve first-order differential equations to model population growth."
   },
-  "INTEGRATIVE-Skill-Select/Evaluate": {
+  "INTERDISCIPLINARY-Skill-Select/Evaluate": {
     verbs: ["compare", "contrast", "map", "associate", "synthesize"],
     template: ["Students will be able to", "[verb]", "[ideas/concepts]", "across", "[disciplines/topics]"],
     example: "Students will be able to compare derivatives and integrals across algebraic and trigonometric functions."
@@ -946,7 +946,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "[methods/strategies]", "for", "[application/problem]"],
     example: "Students will be able to justify the choice of substitution method in solving complex integrals."
   },
-  "INTEGRATIVE-Application of Knowledge": {
+  "INTERDISCIPLINARY-Application of Knowledge": {
     verbs: ["solve", "demonstrate", "adapt", "implement"],
     template: ["Students will be able to", "[verb]", "[knowledge/approach]", "in", "[real/simulated context]"],
     example: "Students will be able to implement integration techniques in simulated physics problems."
@@ -966,7 +966,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "[method/result]", "based on", "[evidence/context]"],
     example: "Students will be able to justify the use of L'Hôpital's Rule for evaluating limits in indeterminate forms."
   },
-  "INTEGRATIVE-Application of Skill": {
+  "INTERDISCIPLINARY-Application of Skill": {
     verbs: ["identify", "propose", "investigate", "monitor", "revise"],
     template: ["Students will be able to", "[verb]", "[learning goals/tasks]", "for", "[course objective/context]"],
     example: "Students will be able to investigate alternative approaches to solve improper integrals."
@@ -986,7 +986,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "[task/activity]", "in", "[course/project context]"],
     example: "Students will be able to organize and submit individual reports on assigned calculus exercises."
   },
-  "INTEGRATIVE-Gen-Communication-Write/Oral/Read/Listen": {
+  "INTERDISCIPLINARY-Gen-Communication-Write/Oral/Read/Listen": {
     verbs: ["respond", "justify", "reflect", "act", "advocate"],
     template: ["Students will be able to", "[verb]", "[ethical/humanistic value]", "in", "[decision/context]"],
     example: "Students will be able to reflect on ethical considerations in applying calculus to real-life predictions."
@@ -1007,7 +1007,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "[possible risks/errors]", "when", "[working on tasks/applying concepts]"],
     example: "Students will be able to identify possible risks of misapplying the chain rule when solving composite function derivatives."
   },
-  "INTEGRATIVE-Gen-Critical/Judge/Responsibility": {
+  "INTERDISCIPLINARY-Gen-Critical/Judge/Responsibility": {
     verbs: ["collaborate", "present", "build on others’ ideas"],
     template: ["Students will be able to", "[verb]", "in", "[group activity]", "to", "[purpose]"],
     example: "Students will be able to collaborate in peer groups to build on others’ ideas for solving challenging integration tasks."
@@ -1028,7 +1028,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "[concept/topic]", "in", "[context/course unit]"],
     example: "Students will be able to explain the concept of limits in the context of continuous functions."
   },
-  "INTEGRATIVE-Gen-IndependentLearning/IdentifyProblems": {
+  "INTERDISCIPLINARY-Gen-IndependentLearning/IdentifyProblems": {
     verbs: ["execute", "implement", "solve", "use", "operate"],
     template: ["Students will be able to", "[verb]", "[procedure/tool]", "to", "[problem type or task]"],
     example: "Students will be able to solve first-order differential equations to model population growth."
@@ -1048,7 +1048,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "[data/information]", "to", "[purpose]"],
     example: "Students will be able to interpret a graph of a function to determine intervals of increase and decrease."
   },
-  "INTEGRATIVE-Empl-Job readiness": {
+  "INTERDISCIPLINARY-Empl-Job readiness": {
     verbs: ["choose", "justify", "critique", "test", "recommend"],
     template: ["Students will be able to", "[verb]", "[methods/strategies]", "for", "[application/problem]"],
     example: "Students will be able to justify the choice of substitution method in solving complex integrals."
@@ -1068,7 +1068,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "[information/idea]", "in", "[mode/context]"],
     example: "Students will be able to present problem-solving strategies in oral presentations during tutorial sessions."
   },
-  "INTEGRATIVE-Empl-Group work": {
+  "INTERDISCIPLINARY-Empl-Group work": {
     verbs: ["critique", "assess", "argue", "justify", "conclude"],
     template: ["Students will be able to", "[verb]", "[method/result]", "based on", "[evidence/context]"],
     example: "Students will be able to justify the use of L'Hôpital's Rule for evaluating limits in indeterminate forms."
@@ -1088,7 +1088,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "with peers to", "[team activity/goal]"],
     example: "Students will be able to present jointly with peers a group solution to a multistep optimization problem."
   },
-  "INTEGRATIVE-Empl-Responsible for self-work": {
+  "INTERDISCIPLINARY-Empl-Responsible for self-work": {
     verbs: ["complete", "organize", "reflect", "plan", "fulfill"],
     template: ["Students will be able to", "[verb]", "[task/activity]", "in", "[course/project context]"],
     example: "Students will be able to organize and submit individual reports on assigned calculus exercises."
@@ -1109,7 +1109,7 @@ const cloTemplates = {
     verbs: ["anticipate", "recognize", "acknowledge", "evaluate"]
   },
   
-  "INTEGRATIVE-Ethic-Practice-Constitution/Human/Moral": {
+  "INTERDISCIPLINARY-Ethic-Practice-Constitution/Human/Moral": {
     verbs: ["analyze", "identify", "discuss", "reflect"],
     template: ["Students will be able to", "[verb]", "[possible risks/errors]", "when", "[working on tasks/applying concepts]"],
     example: "Students will be able to identify possible risks of misapplying the chain rule when solving composite function derivatives."
@@ -1129,7 +1129,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "contributions of", "[individuals/cultures]", "in", "[subject/topic]"],
     example: "Students will be able to illustrate contributions of Indian and Arab mathematicians to early concepts of integration."
   },
-  "INTEGRATIVE-StudentContri-Asking Questions": {
+  "INTERDISCIPLINARY-StudentContri-Asking Questions": {
     verbs: ["critique", "assess", "argue", "justify", "conclude"],
     template: ["Students will be able to", "[verb]", "[method/result]", "based on", "[evidence/context]"],
     example: "Students will be able to justify the use of L'Hôpital's Rule for evaluating limits in indeterminate forms."
@@ -1149,7 +1149,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "with peers to", "[team activity/goal]"],
     example: "Students will be able to present jointly with peers a group solution to a multistep optimization problem."
   },
-  "INTEGRATIVE-StudentContri-Group Tasks": {
+  "INTERDISCIPLINARY-StudentContri-Group Tasks": {
     verbs: ["complete", "organize", "reflect", "plan", "fulfill"],
     template: ["Students will be able to", "[verb]", "[task/activity]", "in", "[course/project context]"],
     example: "Students will be able to organize and submit individual reports on assigned calculus exercises."
@@ -1170,7 +1170,7 @@ const cloTemplates = {
     verbs: ["anticipate", "recognize", "acknowledge", "evaluate"]
   },
   
-  "INTEGRATIVE-StudentContri-Risk Taking": {
+  "INTERDISCIPLINARY-StudentContri-Risk Taking": {
     verbs: ["analyze", "identify", "discuss", "reflect"],
     template: ["Students will be able to", "[verb]", "[possible risks/errors]", "when", "[working on tasks/applying concepts]"],
     example: "Students will be able to identify possible risks of misapplying the chain rule when solving composite function derivatives."
@@ -1190,7 +1190,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "contributions of", "[individuals/cultures]", "in", "[subject/topic]"],
     example: "Students will be able to illustrate contributions of Indian and Arab mathematicians to early concepts of integration."
   },
-  "INTEGRATIVE-SubjectEvol-Over Time": {
+  "INTERDISCIPLINARY-SubjectEvol-Over Time": {
     verbs: ["analyze", "identify", "discuss", "reflect"],
     template: ["Students will be able to", "[verb]", "[possible risks/errors]", "when", "[working on tasks/applying concepts]"],
     example: "Students will be able to identify possible risks of misapplying the chain rule when solving composite function derivatives."
@@ -1210,7 +1210,7 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "contributions of", "[individuals/cultures]", "in", "[subject/topic]"],
     example: "Students will be able to illustrate contributions of Indian and Arab mathematicians to early concepts of integration."
   },
-  "INTEGRATIVE-ubjectEvol-Human": {
+  "INTERDISCIPLINARY-ubjectEvol-Human": {
     verbs: ["analyze", "identify", "discuss", "reflect"],
     template: ["Students will be able to", "[verb]", "[possible risks/errors]", "when", "[working on tasks/applying concepts]"],
     example: "Students will be able to identify possible risks of misapplying the chain rule when solving composite function derivatives."
@@ -1549,83 +1549,83 @@ const step2SubGAOptions = [
   "STANDARD-Knowledge/Understanding-Concept",
   "DEVELOPMENTAL-Knowledge/Understanding-Concept",
   "ASPIRATIONAL-Knowledge/Understanding-Concept",
-  "INTEGRATIVE-Knowledge/Understanding-Concept",
+  "INTERDISCIPLINARY-Knowledge/Understanding-Concept",
   "STANDARD-Knowledge/Understanding-Procedure",
   "DEVELOPMENTAL-Knowledge/Understanding-Procedure",
   "ASPIRATIONAL-Knowledge/Understanding-Procedure",
-  "INTEGRATIVE-Knowledge/Understanding-Procedure",
+  "INTERDISCIPLINARY-Knowledge/Understanding-Procedure",
   "STANDARD-Knowledge/Understanding-Linking Ideas",
   "DEVELOPMENTAL-Knowledge/Understanding-Linking Ideas",
   "ASPIRATIONAL-Knowledge/Understanding-Linking Ideas",
-  "INTEGRATIVE-Knowledge/Understanding-Linking Ideas",
+  "INTERDISCIPLINARY-Knowledge/Understanding-Linking Ideas",
   "STANDARD-Skill-Task Completion",
   "DEVELOPMENTAL-Skill-Task Completion",
   "ASPIRATIONAL-Skill-Task Completion",
-  "INTEGRATIVE-Skill-Task Completion",
+  "INTERDISCIPLINARY-Skill-Task Completion",
   "STANDARD-Skill-Analyze",
   "DEVELOPMENTAL-Skill-Analyze",
   "ASPIRATIONAL-Skill-Analyze",
-  "INTEGRATIVE-Skill-Analyze",
+  "INTERDISCIPLINARY-Skill-Analyze",
   "STANDARD-Skill-Select/Evaluate",
   "DEVELOPMENTAL-Skill-Select/Evaluate",
   "ASPIRATIONAL-Skill-Select/Evaluate",
-  "INTEGRATIVE-Skill-Select/Evaluate",
+  "INTERDISCIPLINARY-Skill-Select/Evaluate",
   "STANDARD-Application of Knowledge",
   "DEVELOPMENTAL-Application of Knowledge",
   "ASPIRATIONAL-Application of Knowledge",
-  "INTEGRATIVE-Application of Knowledge",
+  "INTERDISCIPLINARY-Application of Knowledge",
   "STANDARD-Application of Skill",
   "DEVELOPMENTAL-Application of Skill",
   "ASPIRATIONAL-Application of Skill",
-  "INTEGRATIVE-Application of Skill",
+  "INTERDISCIPLINARY-Application of Skill",
   "STANDARD-Gen-Communication-Write/Oral/Read/Listen",
   "DEVELOPMENTAL-Gen-Communication-Write/Oral/Read/Listen",
     "ASPIRATIONAL-Gen-Communication-Write/Oral/Read/Listen",
-  "INTEGRATIVE-Gen-Communication-Write/Oral/Read/Listen",
+  "INTERDISCIPLINARY-Gen-Communication-Write/Oral/Read/Listen",
   "STANDARD-Gen-Critical/Judge/Responsibility",
   "DEVELOPMENTAL-Gen-Critical/Judge/Responsibility",
   "ASPIRATIONAL-Gen-Critical/Judge/Responsibility",
-  "INTEGRATIVE-Gen-Critical/Judge/Responsibility",
+  "INTERDISCIPLINARY-Gen-Critical/Judge/Responsibility",
   "STANDARD-Gen-IndependentLearning/IdentifyProblems",
   "DEVELOPMENTAL-Gen-IndependentLearning/IdentifyProblems",
   "ASPIRATIONAL-Gen-IndependentLearning/IdentifyProblems",
-  "INTEGRATIVE-Gen-IndependentLearning/IdentifyProblems",
+  "INTERDISCIPLINARY-Gen-IndependentLearning/IdentifyProblems",
   "STANDARD-Empl-Job readiness",
   "DEVELOPMENTAL-Empl-Job readiness",
   "ASPIRATIONAL-Empl-Job readiness",
-  "INTEGRATIVE-Empl-Job readiness",
+  "INTERDISCIPLINARY-Empl-Job readiness",
   "STANDARD-Empl-Group work",
   "DEVELOPMENTAL-Empl-Group work",
     "ASPIRATIONAL-Empl-Group work",
-  "INTEGRATIVE-Empl-Group work",
+  "INTERDISCIPLINARY-Empl-Group work",
   "STANDARD-Empl-Responsible for self-work",
   "DEVELOPMENTAL-Empl-Responsible for self-work",
   "ASPIRATIONAL-Empl-Responsible for self-work",
-  "INTEGRATIVE-Empl-Responsible for self-work",
+  "INTERDISCIPLINARY-Empl-Responsible for self-work",
   "STANDARD-Ethic-Practice-Constitution/Human/Moral",
   "DEVELOPMENTAL-Ethic-Practice-Constitution/Human/Moral",
   "ASPIRATIONAL-Ethic-Practice-Constitution/Human/Moral",
-  "INTEGRATIVE-Ethic-Practice-Constitution/Human/Moral",
+  "INTERDISCIPLINARY-Ethic-Practice-Constitution/Human/Moral",
   "STANDARD-StudentContri-Asking Questions",
   "DEVELOPMENTAL-StudentContri-Asking Questions",
     "ASPIRATIONAL-StudentContri-Asking Questions",
-  "INTEGRATIVE-StudentContri-Asking Questions",
+  "INTERDISCIPLINARY-StudentContri-Asking Questions",
   "STANDARD-StudentContri-Group Tasks",
   "DEVELOPMENTAL-StudentContri-Group Tasks",
   "ASPIRATIONAL-StudentContri-Group Tasks",
-  "INTEGRATIVE-StudentContri-Group Tasks",
+  "INTERDISCIPLINARY-StudentContri-Group Tasks",
   "STANDARD-StudentContri-Risk Taking",
   "DEVELOPMENTAL-StudentContri-Risk Taking",
 "ASPIRATIONAL-StudentContri-Risk Taking",
-  "INTEGRATIVE-StudentContri-Risk Taking",
+  "INTERDISCIPLINARY-StudentContri-Risk Taking",
   "STANDARD-SubjectEvol-Over Time",
   "DEVELOPMENTAL-SubjectEvol-Over Time",
   "ASPIRATIONAL-SubjectEvol-Over Time",
-  "INTEGRATIVE-SubjectEvol-Over Time",
+  "INTERDISCIPLINARY-SubjectEvol-Over Time",
   "STANDARD-SubjectEvol-Human",
   "DEVELOPMENTAL-SubjectEvol-Human",
     "ASPIRATIONAL-SubjectEvol-Human",
-  "INTEGRATIVE-SubjectEvol-Human"    
+  "INTERDISCIPLINARY-SubjectEvol-Human"    
 ];
 
 function handleGASelectStep2() {
@@ -2488,9 +2488,9 @@ footer.innerHTML = `
   <p style="font-family: 'Consolas', monospace; font-size: 0.95rem;">
     This guide is inspired by the NHQEF framework (UGC) and NEP 2020 policy documents, with additional attributes incorporated to support the goals of holistic education.<br/><br/>
     In addition to the graduate attributes recommended for Level 4.5 in the NHQEF framework, this tool includes <em>Student Contribution</em> and <em>Subject Evolution</em> to better align with NEP 2020’s emphasis on holistic development.<br/><br/>
-    The tool recognizes four types of Graduate Attributes (GAs): <strong>Standard</strong>, <strong>Developmental</strong>, <strong>Aspirational</strong>, and <strong>Integrative</strong>.<br/>
+    The tool recognizes four types of Graduate Attributes (GAs): <strong>Standard</strong>, <strong>Developmental</strong>, <strong>Aspirational</strong>, and <strong>Intedisciplinary</strong>.<br/>
     – <strong>Standard</strong> types closely follow the NHQEF language.<br/>
-    – <strong>Integrative</strong> types emphasize the application of NHQEF GAs in multidisciplinary and interdisciplinary contexts.<br/>
+    – <strong>Intedisciplinary</strong> types emphasize the application of NHQEF GAs in multidisciplinary and interdisciplinary contexts.<br/>
     – <strong>Developmental</strong> types reflect NEP 2020’s goal of offering flexibility in learning trajectories and supporting student growth.<br/>
     – <strong>Aspirational</strong> types highlight valuing and appreciating a field of study, promoting identity formation and affective engagement beyond mastery.<br/><br/>
     If you have any questions, feel free to reach out to <strong>Praveen Chhikara</strong>.
