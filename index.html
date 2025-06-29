@@ -1645,26 +1645,7 @@ function handleGASelectStep2() {
   const container = document.getElementById("cloDisplayBlock");
   container.innerHTML = "";
 
-  const label = document.createElement("label");
-  label.textContent = "Now select a Sub-GA:";
-  label.style.fontWeight = "bold";
-  label.style.marginTop = "1rem";
-  container.appendChild(label);
-
-  const subgaDropdown = document.createElement("select");
-  subgaDropdown.id = "step2SubGADropdown";
-  subgaDropdown.innerHTML = '<option value="">-- Select Sub-GA --</option>';
-  subgaDropdown.style.marginBottom = "1rem";
-  subgaDropdown.style.marginLeft = "10px";
-
-  step2SubGAOptions.forEach(subga => {
-    const opt = document.createElement("option");
-    opt.value = subga;
-    opt.textContent = subga;
-    subgaDropdown.appendChild(opt);
-  });
-
-  container.appendChild(subgaDropdown);
+  
 }
 
 document.addEventListener("DOMContentLoaded", () => {
