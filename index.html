@@ -2538,6 +2538,27 @@ document.getElementById("showCLOSummaryButton").addEventListener("click", functi
   
 });
 </script>
+<script>
+let isFormDirty = false;
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Watch for any changes in inputs, selects, textareas
+  const inputs = document.querySelectorAll("input, textarea, select");
+
+  inputs.forEach(input => {
+    input.addEventListener("input", () => {
+      isFormDirty = true;
+    });
+  });
+
+  window.addEventListener("beforeunload", function (e) {
+    if (isFormDirty) {
+      e.preventDefault();
+      e.returnValue = ""; // This triggers the browser's confirmation dialog
+    }
+  });
+});
+</script>
 
 </body>
 </html>
