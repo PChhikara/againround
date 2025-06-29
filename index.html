@@ -1959,15 +1959,17 @@ document.getElementById("zerothSelect").addEventListener("change", function () {
 
   gaDropdown.addEventListener("change", () => {
     const label = document.createElement("label");
-    label.textContent = "Now select a Sub-GA for the GA above:";
-    label.style.fontWeight = "bold";
-    const helpIcon = document.createElement("span");
-    helpIcon.textContent = " (?)";
-    helpIcon.title = "This is the text in your above GA before colon sign";
-    helpIcon.style.cursor = "help";
-    label.appendChild(helpIcon);
-    cloDisplay.innerHTML = "";
-    cloDisplay.appendChild(label);
+label.textContent = "Now select a Sub-GA for the GA above:";
+label.style.fontWeight = "bold";
+cloDisplay.appendChild(label);
+
+const note = document.createElement("p");
+note.textContent = "This option will be auto-selected based on the selected GA above.";
+note.style.color = "#6f42c1";  // Bootstrap purple
+note.style.fontSize = "0.85rem";
+note.style.marginTop = "0.25rem";
+cloDisplay.appendChild(note);
+
 
     const subgaDropdown = document.createElement("select");
     subgaDropdown.id = "step2SubGADropdown";
